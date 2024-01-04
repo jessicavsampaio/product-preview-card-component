@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    min-width: 600px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    height: 480px;
+}
+
+img {
+    width: 50%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+    height: 100%;
+}
+
+h5 {
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    color: hsl(212, 21%, 14%);
+}
+
+p {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+}
+
+.previous-price {
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+button:hover {
+    background-color: hsl(158, 35%, 19%);
+    cursor: pointer;
+}
+
+button img {
+    height: 16px;
+    width: 16px;
+}
+
+button p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+@media (max-width:620px) {
+    main {
+        width: 95%;
+        min-width: 350px;
+        height: 95%;
+        flex-direction: column;
+        max-width: 330px;
+    }
+
+    img {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
